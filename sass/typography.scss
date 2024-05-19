@@ -8,10 +8,117 @@ body {
   text-align: left;
 }
 
+h1, h2, h3 {
+  font-family: $h-font;
+}
+
+
+h1 {
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+}
+
 p {
   font-family: $paragraph-font;
   font-size: $paragraph-font-size;
 
   line-height: 2rem;
-  //margin-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+a {
+  font-size: $paragraph-font-size;
+}
+
+main, footer {
+  a {
+    color: $paragraph-font-color;
+
+    &:hover {
+      color: $paragraph-font-color-hover;
+
+    }
+
+    transition: 0.1s;
+  }
+
+  p {
+    img {
+
+      margin: 3rem auto;
+      max-width: 75%;
+      max-height: 500px;
+      display: block;
+
+      border-radius: 5px;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+
+    }
+
+  }
+
+  blockquote {
+
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-left: solid 2px $paragraph-font-color;
+
+    //font-style: italic;
+    font-size: $paragraph-font-size;
+
+  }
+
+
+}
+
+#rotate-text {
+  transform: rotate(-30deg);
+  display: inline-block;
+}
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: block;
+  border: 0;
+  background: none;
+  text-align: center;
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+hr:before {
+  content: '\2022\2022\2022';
+  display: inline-block;
+  font-size: calc(.8em + .2vw);
+  margin-left: 0.6em;
+  letter-spacing: 1.25em;
+  color: $paragraph-font-color;
+  position: relative;
+}
+
+@media (max-width: 425px) {
+  p {
+    line-height: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  main, footer {
+    p {
+      img {
+        margin: 1.5rem auto;
+        max-width: 95%;
+        max-height: 500px;
+        display: block;
+
+        border-radius: 5px;
+      }
+    }
+
+    blockquote {
+      padding-left: 1rem;
+      padding-right: 0rem;
+    }
+  }
+
 }

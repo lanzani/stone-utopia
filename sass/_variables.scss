@@ -40,9 +40,14 @@ $nav-font-color-hover: $clr-blue-1;
 $nav-icon-font-size: 2rem;
 $nav-icon-font-color: $clr-dark-1;
 
+// Heading
+$h-font: $font-atkinson;
+
 // Paragraph
 $paragraph-font: $font-atkinson;
 $paragraph-font-size: clamp(1rem, 5vw, 1.2rem);
+$paragraph-font-color: $clr-dark-1;
+$paragraph-font-color-hover: $clr-blue-1;
 
 
 
