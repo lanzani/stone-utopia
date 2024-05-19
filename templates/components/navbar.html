@@ -1,0 +1,20 @@
+<header class="header">
+
+    <a  href="/" class="logo{% if current_path and current_path == '/' %} active{% endif %}" >federico</a>
+
+    <input type="checkbox" id="check">
+    <label for="check" class="icons">
+        <i class="bi bi-list" id="menu-icon"></i>
+        <i class="bi bi-x" id="close-menu-icon"></i>
+    </label>
+
+    <nav class="navbar">
+        {% for navbar_link in config.extra.navbar_links %}
+        {% set link_url = navbar_link.url | replace(from="$BASE_URL", to=config.base_url) %}
+
+        <a {% if current_url and current_url== link_url %} class="active" {% endif %} href="{{ link_url }}">{{navbar_link.name}}</a>
+
+        {% endfor %}
+
+    </nav>
+</header>

@@ -1,0 +1,17 @@
+@import "variables";
+
+body {
+  font-family: $default-font;
+  font-weight: $default-font-weight;
+  font-size: $default-font-size;
+  color: $default-font-color;
+  text-align: left;
+}
+
+p {
+  font-family: $paragraph-font;
+  font-size: $paragraph-font-size;
+
+  line-height: 2rem;
+  //margin-bottom: 2rem;
+}

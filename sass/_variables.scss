@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+// === Raw Colors ======================================================================================================
+$clr-dark-1: #102D40;
+
+$clr-blue-1: #219ebc;
+
+$clr-light-1: #ffffff;
+
+// === Colors ==========================================================================================================
+$bg-color:#f7f7f7;
+
+
+// === Raw Fonts ===========================================================================================================
+$font-atkinson: 'Atkinson Hyperlegible', sans-serif;
+
+
+// === Fonts ===========================================================================================================
+$default-font: $font-atkinson;
+$default-font-weight: 400;
+$default-font-size: 1.2rem;
+$default-font-color: $clr-dark-1;
+
+// Logo
+$logo-font: $font-atkinson;
+$logo-font-weight: 400;
+$logo-font-size: 1.2rem;
+$logo-font-color: $clr-dark-1;
+$logo-font-color-hover: $clr-blue-1;
+
+// Navbar
+$nav-font: $font-atkinson;
+$nav-font-weight: 400;
+$nav-font-size: 1.2rem;
+$nav-font-style: normal;
+$nav-font-color: $clr-dark-1;
+$nav-font-color-hover: $clr-blue-1;
+
+$nav-icon-font-size: 2rem;
+$nav-icon-font-color: $clr-dark-1;
+
+// Paragraph
+$paragraph-font: $font-atkinson;
+$paragraph-font-size: clamp(1rem, 5vw, 1.2rem);
+
+
+
+// === Sizes ===========================================================================================================
+$max-width-small: 45rem;
+$max-width-large: 60rem;
