@@ -1,6 +1,6 @@
 <header class="header">
 
-    <a  href="/" class="logo{% if current_path and current_path == '/' %} active{% endif %}" >federico</a>
+    <a href="/" class="logo{% if current_path and current_path == '/' %} active{% endif %}">federico</a>
 
     <input type="checkbox" id="check">
     <label for="check" class="icons">
@@ -10,9 +10,10 @@
 
     <nav class="navbar">
         {% for navbar_link in config.extra.navbar_links %}
-        {% set link_url = navbar_link.url | replace(from="$BASE_URL", to=config.base_url) %}
+        {% set link_url = navbar_link.url | replace(from="$BASE_URL", to="") %}
+        {% set page_link = link_url ~ "/" %}
 
-        <a {% if current_url and current_url== link_url %} class="active" {% endif %} href="{{ link_url }}">{{navbar_link.name}}</a>
+        <a {% if current_path and current_path == page_link %} class="active" {% endif %} href="{{ link_url }}">{{navbar_link.name}}</a>
 
         {% endfor %}
 

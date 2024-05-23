@@ -28,17 +28,37 @@
     text-decoration: none;
 
 
-
     &:hover {
       color: $logo-font-color-hover;
+
     }
 
     transition: 0.2s;
 
   }
 
+  a {
+
+    &:before {
+      content: '';
+    }
+
+    &:after {
+      content: '';
+    }
+  }
+
   .active {
-    color: $logo-font-color;
+    color: $clr-orange-1;
+
+    &:before {
+      content: '/';
+    }
+
+    &:after {
+      content: '';
+    }
+
   }
 
   .navbar {
@@ -56,6 +76,7 @@
       &:hover {
         color: $nav-font-color-hover;
         //border-bottom: dashed 2px $nav-font-color-hover;
+
       }
 
 
@@ -63,11 +84,10 @@
     }
 
     .active {
-      color:$clr-dark-1;
-      border-bottom: dashed 2px $clr-dark-1;
+      color: $clr-orange-1;
 
       &:hover {
-        color: $clr-blue-1;
+
       }
     }
 
