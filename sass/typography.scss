@@ -18,6 +18,11 @@ h1 {
   margin-bottom: 2rem;
 }
 
+h2 {
+    //margin-top: 3rem;
+    //margin-bottom: 1.5rem;
+}
+
 p {
   font-family: $paragraph-font;
   font-size: $paragraph-font-size;
@@ -42,6 +47,23 @@ main, footer {
     transition: 0.1s;
   }
 
+  .youtube-video {
+    margin: 3rem auto;
+    max-width: 75%;
+    max-height: 500px;
+    display: block;
+
+    border-radius: 5px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+
+    &:hover {
+      box-shadow: 0 15px 25px rgba(211, 78, 36, .2);
+      //border: solid 3px $clr-orange-1;
+    }
+
+    transition: 0.2s;
+  }
+
   p {
     img {
 
@@ -52,6 +74,13 @@ main, footer {
 
       border-radius: 5px;
       box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+
+      &:hover {
+        box-shadow: 0 15px 25px rgba(211, 78, 36, .2);
+        //border: solid 3px $clr-orange-1;
+      }
+
+      transition: 0.2s;
 
     }
 
@@ -93,7 +122,8 @@ hr:before {
   font-size: calc(.8em + .2vw);
   margin-left: 0.6em;
   letter-spacing: 1.25em;
-  color: $paragraph-font-color;
+  color: rgba(16, 45, 64, 0.5);
+  //color: $paragraph-font-color;
   position: relative;
 }
 
