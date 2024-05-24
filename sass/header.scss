@@ -52,11 +52,11 @@
     color: $clr-orange-1;
 
     &:before {
-      content: '/';
+      content: '';
     }
 
     &:after {
-      content: '';
+      content: '/';
     }
 
   }
