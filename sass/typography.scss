@@ -31,6 +31,16 @@ p {
   margin-bottom: 2rem;
 }
 
+ul {
+  font-family: $paragraph-font;
+  font-size: $paragraph-font-size;
+
+  margin-left: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+
+}
+
 a {
   font-size: $paragraph-font-size;
 }
