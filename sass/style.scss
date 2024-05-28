@@ -8,6 +8,7 @@
 @import "section-page";
 @import "projects-page";
 @import "project-gallery";
+@import "footer";
 
 * {
   padding: 0;
@@ -34,4 +35,18 @@ body {
 main {
   @include content-width($max-width-small);
   margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    margin-bottom: 1.5rem;
+  }
+
+}
+
+@media (max-width: 425px) {
+  main {
+    margin-bottom: 0;
+  }
+
 }
