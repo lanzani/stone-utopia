@@ -1,18 +1,24 @@
 @import "variables";
 
 .project-gallery {
-  //display: grid;
-  //grid-template-rows: repeat(auto-fit, 1fr);
-  //grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
-  //
-  //grid-gap: 2rem;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+
+  grid-gap: 2rem;
+
+  line-height: 2rem;
 
   .item {
+
+    //border-left: 2px solid $default-font-color;
+    //padding: 1rem;
 
     .card-header {
 
       img {
-        width: 200px;
+        width: 250px;
+        margin-bottom: 0.7rem;
         //margin: 3rem auto;
         //display: block;
         //max-height: 3rem;
