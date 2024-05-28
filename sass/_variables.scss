@@ -50,7 +50,9 @@ $paragraph-font-size: clamp(1rem, 5vw, 1.2rem);
 $paragraph-font-color: $clr-dark-1;
 $paragraph-font-color-hover: $clr-orange-1;
 
-
+// Page Title
+$page-title-font: $font-atkinson;
+$page-title-font-size: clamp(3rem, 5vw, 5rem);
 
 // === Sizes ===========================================================================================================
 $max-width-small: 45rem;

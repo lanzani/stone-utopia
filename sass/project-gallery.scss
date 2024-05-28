@@ -1,0 +1,25 @@
+@import "variables";
+
+.project-gallery {
+  //display: grid;
+  //grid-template-rows: repeat(auto-fit, 1fr);
+  //grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  //
+  //grid-gap: 2rem;
+
+  .item {
+
+    .card-header {
+
+      img {
+        width: 200px;
+        //margin: 3rem auto;
+        //display: block;
+        //max-height: 3rem;
+      }
+
+
+    }
+
+  }
+}

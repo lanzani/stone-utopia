@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% import "components/project-gallery.html" as project_galley %}
+
+{% block content %}
+<div class="category-page-header">
+
+    <h1>{{ section.title }}</h1>
+
+    <blockquote>
+        <p>{{ section.extra.quote.quote }}</p>
+        <p><small>— {{ section.extra.quote.author }}, <i>{{ section.extra.quote.source }}</i></small></p>
+    </blockquote>
+
+
+</div>
+
+
+{{ section.content | safe }}
+
+<h1>Now</h1>
+{{ project_galley::input(active=true, type="text") }}
+
+<h1>Past</h1>
+{{ project_galley::input(active=false, type="text") }}
+
+{% endblock content %}

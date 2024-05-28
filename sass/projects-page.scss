@@ -1,7 +1,7 @@
 @import "variables";
 
 
-.section-page-header {
+.category-page-header {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -9,23 +9,14 @@
   gap: 3rem;
 
   margin-bottom: 3rem;
-  //margin-top: 1rem;
+  margin-top: 3rem;
   text-align: left;
 
   h1 {
     font-style: normal;
-    margin-top: 0;
-    margin-bottom: 1rem;
     font-size: $page-title-font-size;
+    margin: 0;
 
-  }
-
-  h2 {
-    font-style: normal;
-    font-weight: 400;
-
-    margin-top: 0;
-    margin-bottom: 0.5rem;
   }
 
   p {
@@ -41,19 +32,6 @@
   }
 
 
-  img {
-    width: 250px;
-    border-radius: 5px;
-
-    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
-    background-size: cover;
-
-    &:hover {
-      box-shadow: 0 15px 25px rgba(211, 78, 36, .2);
-    }
-
-    transition: 0.2s;
-
-  }
-
 }
+
+
